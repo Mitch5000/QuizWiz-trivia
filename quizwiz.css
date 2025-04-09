@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXUybGNtMzIyYXliY3U0NHN6MWdyZm91Y2I3anoyNGJjYjZxNW1yNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Yd9BNyMoC6d6NFZ1iW/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 20px;
+}
+
+#quiz-container {
+  margin-top: 20px;
+}
+
+#question {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: grid;
+  gap: 10p;
+}
+
+#options button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+#options button.correct {
+  background-color: green;
+  color: white;
+}
+
+#options button.incorrect {
+  background-color: red;
+  color: white;
+}
+
+#options button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#timer {
+  font-weight: bold;
+  color: red;
+  font-size: 1.2rem;
+}

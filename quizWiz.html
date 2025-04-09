@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizwiz Trivia</title>
+    <link rel="stylesheet" href="quizwiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="start-screen">
+        <h1>QuizWiz Trivia</h1>
+        <button id="start-quiz">Start Quiz</button>
+      </div>
+      <div id="quiz-container" style="display: none">
+        <div id="question">Loading...</div>
+        <p id="timer">Time Left: <span id="time-left">15</span> seconds</p>
+        <p id="question-number">
+          Question: <span id="current-question">1</span> of 10
+        </p>
+        <div id="options"></div>
+        <button id="next-btn" disabled>Next</button>
+      </div>
+      <div id="result" style="display: none">
+        <h2>Your score: <span id="score"></span>/10</h2>
+        <button id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+    <script src="quizwiz.js"></script>
+  </body>
+</html>
